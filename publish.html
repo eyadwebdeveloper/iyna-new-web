@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IYNA | Publish</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Publish your neuroscience research with IYNA October Chapter.">
+  <meta name="author" content="Eyad Ashraf">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/LOGO9.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div id="progress"><span id="progress-value">&#x2191;</span></div>
+
+  <div class="banner" id="home">
+    <div class="overlay"></div>
+    <video src="Brain.m4v" autoplay loop muted playsinline></video>
+
+    <header>
+      <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo">
+      <input type="checkbox" id="nav_check" hidden>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="issues.html"><i class="fa-solid fa-brain"></i> Issues</a></li>
+          <li><a href="courses.html"><i class="fa-solid fa-briefcase"></i> Courses</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+          <li><a href="#home" class="active"><i class="fa-solid fa-upload"></i> Publish</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+    </header>
+
+    <div class="content">
+      <h1 class="ho">Publish your work <span>with us</span></h1>
+    </div>
+  </div>
+
+  <section class="giude">
+    <div class="firss">
+      <h2>Publication Criteria</h2>
+      <p>
+        <span>1.</span> Make sure the writing style of your submission is up-to-par and proofread it multiple times.<br>
+        <span>2.</span> The article should be formatted in the IYNA format and follow our guidelines accordingly. Any failure to do so could result in your article being rejected for publication.<br>
+        <span>3.</span> IYNA does not accept plagiarism in any form and takes it very seriously. If any plagiarism is detected in your submission, strict action shall be taken.
+      </p>
+    </div>
+    <div class="sconn">
+      <h2>Publication Guidelines</h2>
+      <p>This is the format for the IYNA journal's articles. Make sure that you follow the format and that it covers every point. Any strong deviations will lead to immediate rejection. Questions? Contact us at:
+        <br><span class="mail"><a href="mailto:iynaoctchapter@gmail.com">iynaoctchapter@gmail.com</a></span>
+      </p><br>
+      <a href="IYNA Guidelines.docx" class="word">Check Guidelines</a>
+    </div>
+  </section>
+
+  <section class="publish_form">
+    <div id="publish_box">
+      <h3>Publish Form</h3>
+
+      <!-- Form -->
+      <form id="publish_form">
+        <input class="input" type="text" name="Name" placeholder="Full Name" required />
+        <input class="input" type="email" name="email" placeholder="E-mail" required />
+        <input class="input" type="text" name="Nationality" placeholder="Nationality" required />
+        <input class="input" type="text" name="Article_Name" placeholder="Article Name" required />
+        <input class="input" type="file" name="attachment" id="publish_upload" accept=".pdf,.doc,.docx" required />
+        <div class="publish_commands">
+          <button class="input" type="submit" id="publish_submit">Submit</button>
+        </div>
+      </form>
+
+      <!-- Success message (hidden by default) -->
+      <div id="form-success" style="display:none; text-align:center; padding: 2rem 1rem;">
+        <i class="fa-solid fa-circle-check" style="font-size:3rem; color:#4ade80; display:block; margin-bottom:1rem;"></i>
+        <h4 style="font-size:1.4rem; margin-bottom:0.5rem;">Submission Received!</h4>
+        <p>Thank you for submitting your article. We'll review it and get back to you soon.</p>
+      </div>
+
+      <!-- Error message (hidden by default) -->
+      <div id="form-error" style="display:none; text-align:center; padding: 1rem; color:#f87171;">
+        <i class="fa-solid fa-circle-exclamation" style="font-size:2rem; display:block; margin-bottom:0.5rem;"></i>
+        <p id="form-error-msg">Something went wrong. Please try again.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-distributed" id="footer">
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+
+  <!-- =============================================
+       SUPABASE CONFIGURATION
+       Replace the two values below with your own
+       from: Supabase Dashboard → Project Settings → API
+  ============================================== -->
+  <script>
+    const SUPABASE_BASE    = 'https://piiyzaxogcfzqglcwbwr.supabase.co';           // project base URL (no trailing slash)
+    const SUPABASE_URL     = `${SUPABASE_BASE}/rest/v1`;                           // REST endpoint
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpaXl6YXhvZ2NmenFnbGN3YndyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MDAxMzIsImV4cCI6MjA5NTM3NjEzMn0.7dihu0JIeyidABBCwuIvukFLlJJfi4OjIAM-Hql7lSM'; // anon key
+  </script>
+
+  <script>
+    document.getElementById('publish_form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const submitBtn = document.getElementById('publish_submit');
+      const errorBox = document.getElementById('form-error');
+      const errorMsg = document.getElementById('form-error-msg');
+      const successBox = document.getElementById('form-success');
+
+      // Hide previous messages
+      errorBox.style.display = 'none';
+      successBox.style.display = 'none';
+
+      // Grab field values
+      const fullName    = form.Name.value.trim();
+      const email       = form.email.value.trim();
+      const nationality = form.Nationality.value.trim();
+      const articleName = form.Article_Name.value.trim();
+      const file        = form.attachment.files[0];
+
+      if (!file) {
+        errorMsg.textContent = 'Please attach your article file.';
+        errorBox.style.display = 'block';
+        return;
+      }
+
+      // Disable button while submitting
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      try {
+        // ── 1. Upload file to Supabase Storage ──────────────────────────
+        const fileExt  = file.name.split('.').pop();
+        const fileName = `${Date.now()}_${fullName.replace(/\s+/g, '_')}.${fileExt}`;
+
+const uploadRes = await fetch(
+  `${SUPABASE_BASE}/storage/v1/object/articles/${fileName}`,
+  {
+    method: 'POST',
+    headers: {
+      'apikey': SUPABASE_ANON_KEY,          // ← ADD THIS
+      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'Content-Type': file.type || 'application/octet-stream',
+      'x-upsert': 'true'
+    },
+    body: file
+  }
+);
+
+        if (!uploadRes.ok) {
+          const uploadErr = await uploadRes.json();
+          throw new Error(uploadErr.message || 'File upload failed.');
+        }
+
+        // Build the public URL for the uploaded file
+        const fileUrl = `${SUPABASE_BASE}/storage/v1/object/public/articles/${fileName}`;
+
+        // ── 2. Insert row into the submissions table ─────────────────────
+        const insertRes = await fetch(
+          `${SUPABASE_URL}/submissions`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': SUPABASE_ANON_KEY,
+              'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+              'Prefer': 'return=minimal'
+            },
+            body: JSON.stringify({
+              email:        email,
+            })
+          }
+        );
+
+        if (!insertRes.ok) {
+          const insertErr = await insertRes.json();
+          throw new Error(insertErr.message || 'Failed to save submission.');
+        }
+
+        // ── 3. Show success ──────────────────────────────────────────────
+        form.style.display = 'none';
+        successBox.style.display = 'block';
+
+      } catch (err) {
+        console.error(err);
+        errorMsg.textContent = err.message || 'Something went wrong. Please try again.';
+        errorBox.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+  </script>
+
+</body>
+</html>

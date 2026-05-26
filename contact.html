@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IYNA October Chapter — Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with IYNA October Chapter — a group of young neuroscientists dedicated to the next generation.">
+  <meta name="author" content="Eyad Ashraf">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/LOGO9.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div id="progress"><span id="progress-value">&#x2191;</span></div>
+
+  <div class="banner" id="home">
+    <div class="overlay"></div>
+    <video src="Brain.m4v" autoplay loop muted playsinline></video>
+
+    <header>
+      <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo">
+      <input type="checkbox" id="nav_check" hidden>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="issues.html"><i class="fa-solid fa-brain"></i> Issues</a></li>
+          <li><a href="courses.html"><i class="fa-solid fa-briefcase"></i> Courses</a></li>
+          <li><a href="#home" class="active"><i class="fa-solid fa-message"></i> Contact</a></li>
+          <li><a href="publish.html"><i class="fa-solid fa-upload"></i> Publish</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+    </header>
+
+    <div class="content">
+      <h1 class="ho">Get in touch <span>with us</span></h1>
+    </div>
+  </div>
+
+  <section class="sec">
+    <div class="wrapper">
+      <h2>Contact Us</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8cc708c8-8bf8-42ff-9b1f-42786fd1c9c0">
+        <input type="text" name="name" placeholder="Your name…" required>
+        <input type="email" name="email" placeholder="Your email…" required>
+        <textarea name="message" placeholder="Your message…" required></textarea>
+        <button type="submit">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-distributed" id="footer">
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
+  <script>
+	fetch("footer.html")
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById("footer").innerHTML = data;
+	});
+  </script>
+</body>
+</html>

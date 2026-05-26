@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IYNA | Issues</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the future of neuroscience — IYNA October Chapter research issues.">
+  <meta name="author" content="Eyad Ashraf">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/LOGO9.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/teamstyle.css">
+</head>
+<body>
+
+  <div id="progress"><span id="progress-value">&#x2191;</span></div>
+
+  <div class="banner" id="home">
+    <div class="overlay"></div>
+    <video src="Brain.m4v" autoplay loop muted playsinline></video>
+
+    <header>
+      <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo">
+      <input type="checkbox" id="nav_check" hidden>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#home" class="active"><i class="fa-solid fa-brain"></i> Issues</a></li>
+          <li><a href="courses.html"><i class="fa-solid fa-briefcase"></i> Courses</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+          <li><a href="publish.html"><i class="fa-solid fa-upload"></i> Publish</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+    </header>
+
+    <div class="content iss">
+      <h1>Discover the latest <span>issues</span></h1>
+      <div class="issues">
+        <a href="issue_1.html"><img src="imgs/issues_season1_1.jpg" alt="Issue 1" /></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="season">
+    <h2>Season 1</h2>
+    <div class="imags">
+      <div class="fi">
+        <a href="issue_1.html"><img src="imgs/issue_1_placeholder.jpg" class="one" alt=""></a>
+        <a href="issue_1.html"><img src="imgs/issues_season1_1_placeholder.jpg" class="two" alt=""></a>
+      </div>
+      <a href="issue_1.html"><img src="imgs/issues_season1_1.jpg" class="three" alt=""></a>
+    </div>
+  </section>
+
+  <footer class="footer-distributed" id="footer">
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
+  <script>
+	fetch("footer.html")
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById("footer").innerHTML = data;
+	});
+  </script>
+</body>
+</html>

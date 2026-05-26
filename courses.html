@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IYNA | Courses</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the future of neuroscience. We are a group of young neuroscientists passionately dedicated to helping the next generation understand neuroscience.">
+  <meta name="author" content="Eyad Ashraf">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/LOGO9.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <div id="progress"><span id="progress-value">&#x2191;</span></div>
+
+  <div class="banner" id="home">
+    <div class="overlay"></div>
+    <video src="Brain.m4v" autoplay loop muted playsinline></video>
+
+    <header>
+      <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo">
+      <input type="checkbox" id="nav_check" hidden>
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="issues.html"><i class="fa-solid fa-brain"></i> Issues</a></li>
+          <li><a href="#home" class="active"><i class="fa-solid fa-briefcase"></i> Courses</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+          <li><a href="publish.html"><i class="fa-solid fa-upload"></i> Publish</a></li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+    </header>
+
+    <div class="content">
+      <h1 class="ho">Learn more about <span>neuroscience</span></h1>
+    </div>
+  </div>
+
+  <section class="courses_sec2">
+    <h2>Courses</h2>
+    <div class="courses">
+      <div class="course-card card-one">
+        <img src="imgs/neurons.png" alt="Neuroscience 1">
+        <div class="cont">
+          <h3><i class="fa-solid fa-book-open"></i> 8 Sessions</h3>
+          <h2>Neuroscience 1</h2>
+          <p>Neuroscience 1 is focused on the foundations of neuroscience. Within it, students learn more about neuroanatomy, action potential, and more.</p>
+        </div>
+        <hr>
+      </div>
+      <div class="course-card card-two">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgRMgl4ZG0-wNCDCfmS0JT6544NViNicP_A&s" alt="Neuroscience 2">
+        <div class="cont">
+          <h3><i class="fa-solid fa-book-open"></i> 10 Sessions</h3>
+          <h2>Neuroscience 2</h2>
+          <p>Neuroscience 2 is designed for juniors with a background in neuroscience. It addresses topics like emotions, language, memory, sleep, and more.</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-distributed" id="footer">
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="js/header.js"></script>
+  <script>
+	fetch("footer.html")
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById("footer").innerHTML = data;
+	});
+  </script>
+</body>
+</html>

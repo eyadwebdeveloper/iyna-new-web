@@ -712,6 +712,45 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
   background: rgba(123,140,222,0.22);
   box-shadow: 0 4px 20px var(--accent-glow);
 }
+.application-section{
+  width: 74%;
+  height: 400px;
+  margin-left: 13%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50px;
+}
+.application-section > h1{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px;
+  margin-top: 50px;
+
+}
+.application-section > h1 > span{
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 45px;
+}
+.application-section > button{
+  width: 35%;
+  height: 55px;
+  background-color: var(--dark);
+  border: 3px solid var(--surface2);
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond',sans-serif;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.application-section > button:hover{
+  border: 2px solid var(--accent2);
+  color: var(--accent2);
+  transition: 0.7s ease;
+}
 
 /* ── FOOTER ─────────────────────────────────────────────────── */
 
@@ -924,6 +963,19 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
   .courses { gap: 20px; }
   .team-mem { width: 160px; }
   .caa { width: 100%; }
+
+  .application-section > h1{
+  font-size: 35px;
+  margin-left: 10%;
+}
+.application-section > h1 > span{
+  font-size: 35px;
+}
+.application-section > button{
+  width: 85%;
+  height: 55px;
+  font-size: 20px;
+}
 }
 
 /* ── ANIMATIONS ─────────────────────────────────────────────── */

@@ -963,7 +963,10 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
   .courses { gap: 20px; }
   .team-mem { width: 160px; }
   .caa { width: 100%; }
-
+.application-section{
+  width: 80%;
+  margin-top: 20px;
+}
   .application-section > h1{
   font-size: 35px;
   margin-left: 10%;

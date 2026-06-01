@@ -713,12 +713,12 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
   box-shadow: 0 4px 20px var(--accent-glow);
 }
 .application-section{
-  width: 74%;
-  height: 400px;
-  margin-left: 13%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 74%;
+  height: 400px;
+  margin-left: 13%;
   margin-top: -50px;
 }
 .application-section > h1{

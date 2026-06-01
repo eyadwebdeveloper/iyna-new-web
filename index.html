@@ -242,6 +242,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="js/header.js"></script>
   <script>
+    // Application form
+let applicationFormButton = document.getElementById("application-button");
+applicationFormButton.addEventListener("click", function(){
+    window.location.href = "https://forms.gle/6cVw1REtenL9g7if8";
+});
+
 	fetch("footer.html")
 	.then(response => response.text())
 	.then(data => {

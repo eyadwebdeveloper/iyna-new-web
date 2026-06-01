@@ -714,7 +714,7 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
 }
 .application-section{
   width: 74%;
-  height: 400px;
+  height: 450px;
   margin-left: 13%;
   display: flex;
   align-items: center;
@@ -723,7 +723,7 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
 }
 .application-section > h1{
   font-family: 'Cormorant Garamond', serif;
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 50px;
 
 }
@@ -735,7 +735,7 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
   font-size: 45px;
 }
 .application-section > button{
-  width: 35%;
+  width: 50%;
   height: 55px;
   background-color: var(--dark);
   border: 3px solid var(--surface2);

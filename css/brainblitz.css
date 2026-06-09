@@ -1,0 +1,204 @@
+.participation-boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.participation-box{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;flex-direction: column;
+    width: 650px;
+    height: 400px;
+    background-color: #151f30;
+    margin-left: 20px;
+    border: 3px solid #162030;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#box2{
+    width: 650px;
+    height: 430px;
+    margin-top: 25px;
+}
+#box2 > div{
+    height: 22%;
+    margin-bottom: 45px;
+}
+.participation-box:hover{
+    border-bottom: 8px solid #1d2e49;
+    transition: 0.5s ease;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.participation-box > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 23%;
+    background-color: #1d2e49;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.participation-box > h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.participation-box > span{
+    font-size: 15px;
+}
+.layout-div{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.layout-div > div{
+    width: 50%;
+    height: 100%;
+    background-color: #1d2e49;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-top: 0px;
+}
+.layout-div > div:hover{
+    box-shadow: 0px 0px 10px #21314b;
+    transition: 0.7s ease;
+}
+.layout-div > div > h2{
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.layout-span{
+    text-align: justify;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 16px;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+.timeline > h2{
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 70px;
+}
+.timeline-line{
+    position: absolute;
+    width: 5px;
+    height: 65%;
+    background-color: #1d2e49;
+    margin-top: 180px;
+    border-radius: 20px;
+}
+.concepts-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.concepts-div{
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    background-color: #162030;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+}
+ .syllabus-heading{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    margin-top: 50px;
+}
+.syllabus-button{
+    width: 80%;
+    height: 65px;
+    background-color: #21314b;
+    color: white;
+    font-size: 23px;
+    font-family: 'Cormorant Garamond', serif;
+    border: 2px solid #1d2e49;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.syllabus-button:hover{
+    background-color: #1a283f;
+    transition: 0.7s ease;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 70px;
+    background-color: #162030;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+}
+.right-container{
+    margin-left: 450px;
+}
+.left-container{
+    margin-right: 450px;
+}
+@media screen and (max-width: 600px){
+    .participation-boxes{
+        flex-direction: column;
+    }
+    .participation-box{
+        width: 90%;
+        max-width: 300px;
+        max-height: 450px;
+        margin-top: 10px;
+    }
+    .participation-box > div{
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .layout-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1200px;
+    }
+    .layout-div > div {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .right-container{
+        margin-left: 0;
+    }
+    .left-container{
+        margin-right: 0;
+    }
+    .timeline-line{
+        margin-left: 400px;
+    }
+    .concepts-section{
+        flex-direction: column;
+    }
+    .concepts-div{
+        margin-top: 10px;
+    }
+}

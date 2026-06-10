@@ -17,10 +17,9 @@
     <video src="Brain.m4v" autoplay loop muted playsinline></video>
 
 
-    
-    <header class="header1" id="header">
+<header class="header1" id="header">
       <div class="logos">
-        <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo">
+        <img src="imgs/logo_F.png" class="logo" id="logo_F" alt="IYNA Logo"  onclick="location.href = './index.html'">
         <img src="imgs/LOGO9.png" class="logo" id="LOGO9" alt="IYNA Icon" style="width:44px;display:none;">
       </div>
       <input type="checkbox" id="nav_check" hidden>
@@ -40,7 +39,7 @@
     <div class="content">
       <h1 class="ho">Welcome to <span>BrainBlitz competition</span></h1>
       <div class="btns">
-        <a href="issues.html">
+        <a>
           <button class="btnn" type="button">
             <strong>VIEW MORE!</strong>
           </button>
@@ -148,8 +147,46 @@
     </div>
     </div>
 
+      <div class="rules-section">
+        <h2>Rules & Instructions</h2>
+        <div id="rules-boxes">
+        <div>
+          <h2>1</h2>
+          <span>You must have stable internet connection to prevent any issues.</span>
+        </div>
 
- <!--<footer class="footer-distributed" id="footer">
+        <div>
+          <h2>2</h2>
+          <span>You must Be Ready and prepare your PC before the competition with 30 minutes at least.</span>
+        </div>
+
+        <div>
+          <h2>3</h2>
+          <span>You mustn't open any tab, only the tab of the competition.</span>
+        </div>
+
+        <div>
+          <h2>4</h2>
+          <span>We will take screenshots so there musn't be more than one person(You) in the camera</span>
+        </div>
+      </div>
+      <span id="warning-span"><strong>Warning:</strong> Failure to follow the instructions will lead to disqualification from the competition!</span>
+    </div>
+
+
+
+    <!--competition banner-->
+      <div class="competition-banner">
+        <div class="competition-info-div">
+          <h2>BrainBlitz is live now!</h2>
+          <span>Be a part of Brain Blitz and participate to win awards, you will receive practice tests once you fill in the registration form</span>
+          <button>Register Now!</button>
+        </div>
+        <img src="./imgs/brain blitz logo.jpg">
+      </div>
+
+
+ <footer class="footer-distributed" id="footer">
   </footer>
 
   <script src="js/header.js"></script>
@@ -159,6 +196,6 @@
 	.then(data => {
 		document.getElementById("footer").innerHTML = data;
 	});
-  </script>-->
+  </script>
 </body>
 </html>

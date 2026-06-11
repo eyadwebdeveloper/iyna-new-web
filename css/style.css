@@ -960,7 +960,7 @@ input:-webkit-autofill { -webkit-text-fill-color: var(--white); }
 }
 
 @media (max-width: 640px) {
-  header .logo { width: 100px; }
+  header .logo { width: 70px; }
   .course-card { width: 100%; max-width: 420px; }
   .courses { gap: 20px; }
   .team-mem { width: 160px; }

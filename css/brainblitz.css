@@ -274,6 +274,9 @@
         max-width: 80px;
         max-height: 80px;
     }
+    .timeline > h2 {
+        font-size: 35px;
+    }
     .layout-div{
         flex-direction: column;
         justify-content: center;
@@ -291,7 +294,7 @@
         margin-right: 0;
     }
     .timeline-line{
-        margin-left: 370px;
+       display: none;
     }
     .concepts-section{
         flex-direction: column;
@@ -302,6 +305,10 @@
         margin-top: 10px;
         margin-right: 20px;
     }
+    .rules-section > h2{
+        font-size: 38px;
+        margin-top: 20px;
+    }
     #rules-boxes{
         flex-wrap: nowrap;
         flex-direction: column;
@@ -311,19 +318,37 @@
         width: 90%;
     }
     #rules-boxes > div > span{
-        font-size: 18px;
+        font-size: 14px;
     }
     #warning-span {
         margin-top: 120px;
         margin-left: 50px;
+        font-size: 15px;
     }
     .competition-banner {
-        margin-top: 650px;
-        width: 450px;
-        height: 300px;
-        margin-right: 200px;
+        flex-direction: column;
+        margin-top: 600px;
+        width: 400px;
+        height: 700px;
+        margin-left: 20px;
     }
-    #footer{
-        margin-top: 800px;
+    .competition-info-div > h2{
+        font-size: 45px;
+        margin-left: 50px;
     }
+    .competition-info-div > span {
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    .competition-banner > img {
+        margin-top: 100px;
+    }
+    .competition-info-div > button {
+        position: absolute;
+        height: 50px;
+        margin-left: 40px;
+        margin-top: 310px;
+    }
+
 }

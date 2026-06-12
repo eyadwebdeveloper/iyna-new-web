@@ -352,3 +352,25 @@
     }
 
 }
+@media screen and (max-width: 365px){
+    #rules-boxes > div > h2 {
+        font-size: 70px;
+    }
+    #rules-boxes > div > span{
+        font-size: 10px;
+    }
+    .competition-banner {
+        width: 90%;
+        margin-left: 20px;
+    }
+    .competition-info-div > h2 {
+        font-size: 30px;
+    }
+    .competition-info-div > span {
+        font-size: 15px;
+    }
+    .competition-info-div > button {
+        margin-left: 0;
+        margin-top: 270px;
+    }
+}

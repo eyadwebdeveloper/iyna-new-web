@@ -15,9 +15,8 @@
       <div class="banner" id="home">
     <div class="overlay"></div>
     <video src="Brain.m4v" autoplay loop muted playsinline></video>
-
-
-<header class="header1" id="header">
+        <!--header-->
+    <header id="header">
       <div class="logos">
         <img src="imgs/website-logo.png" class="logo" id="logo_F" alt="IYNA Logo"  onclick="location.href = './index.html'">
         <img src="imgs/LOGO9.png" class="logo" id="LOGO9" alt="IYNA Icon" style="width:44px;display:none;">
@@ -25,7 +24,7 @@
       <input type="checkbox" id="nav_check" hidden>
       <nav>
         <ul>
-          <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
           <li><a href="issues.html"><i class="fa-solid fa-brain"></i> Issues</a></li>
           <li><a href="courses.html"><i class="fa-solid fa-briefcase"></i> Courses</a></li>
           <li><a href="brainblitz.html" class="active"><i class="fa-solid fa-brain"></i> BrainBlitz</a></li>
@@ -178,10 +177,17 @@
     <!--competition banner-->
       <div class="competition-banner">
         <div class="competition-info-div">
-          <h2>BrainBlitz is live now!</h2>
-          <span>Be a part of Brain Blitz and participate to win awards, you will receive practice tests once you fill in the registration form</span>
-          <button>Register Now!</button>
+          <h2>BrainBlitz is opening soon!</h2>
+          <span>Be a part of Brain Blitz and participate to win awards, be a part of the community and follow us for updates.</span>
         </div>
+        <div class="left-side-competition-div">
+          <button disabled="true">Register Now!</button>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/abdel-aziz-farrag-453052411/" target="_blank" class="fac"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/aziz_gamal_502" target="_blank" class="instag"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:Azizgamal.502@gmail.com" class="whats"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          </div>
         <img src="./imgs/brain blitz logo.jpg">
       </div>
 
@@ -191,11 +197,20 @@
 
   <script src="js/header.js"></script>
   <script>
+
+  let header = document.getElementById("header");
 	fetch("footer.html")
 	.then(response => response.text())
 	.then(data => {
 		document.getElementById("footer").innerHTML = data;
 	});
+  window.onscroll = function(){
+  if(window.scrollY == 0){
+    header.classList.remove("header1");
+  }else if(window.scrollY > 0){
+    header.classList.add("header1");
+  }
+}
   </script>
 </body>
 </html>

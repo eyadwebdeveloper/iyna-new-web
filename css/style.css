@@ -52,7 +52,16 @@ body {
 ::selection { background: rgba(123,140,222,0.3); color: var(--white); }
 
 /* ── HERO / BANNER ─────────────────────────────────────────── */
-
+.header1{
+    height: 70px;
+     background: rgba(8,12,18,0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+#logo_F{
+    width: 80px;
+    margin-top: 0;
+}
 .banner {
   width: 100%;
   min-height: 100vh;
